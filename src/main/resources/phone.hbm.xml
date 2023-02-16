@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.example.Phone" table="phone">
+        <id name="id" column="ID" type="int">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="Name" type="string"/>
+        <property name="price" column="Price" type="int"/>
+        <property name="color" column="Color" type="string"/>
+        <property name="country" column="Country" type="string"/>
+        <property name="quantity" column="Quantity" type="int"/>
+    </class>
+</hibernate-mapping>
